@@ -1,0 +1,31 @@
+.skills {
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      margin-top: 1em;
+
+      .progressbar {
+        margin-top: .5em;
+        height: 5px;
+        border: 1px solid $color-skills;
+        border-radius: 2px;
+
+        .progressbar-inner {
+          height: 5px;
+          background-color: $color-skills;
+        }
+      }
+
+      @for $i from 1 through 20 {
+        .p#{$i*5} .progressbar-inner {
+          width: $i * 5%;
+        }
+      }
+
+      &.space-top {
+        margin-top: 2.5em;
+      }
+    }
+  }
+}

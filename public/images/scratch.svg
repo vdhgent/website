@@ -1,0 +1,14 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="400" height="400"
+     xmlns="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
+        </style>
+    </defs>
+    <rect width="400" height="400" style="fill:rgb(33,33,33)" />
+    <text x="20" y="370" fill="white" font-size="142" font-family="Merriweather">vdh</text>
+    <text x="290" y="370" fill="white" font-size="40" font-family="Merriweather">.gent</text>
+</svg>

@@ -1,0 +1,57 @@
+.onoffswitch-row {
+  .onoffswitch, .text {
+    vertical-align: middle;
+  }
+
+  .text {
+    display: inline-block;
+  }
+}
+
+.onoffswitch {
+  position: relative;
+  width: 2em;
+  user-select: none;
+  display: inline-block;
+
+  input[type=checkbox] {
+    display: none;
+
+    &:checked {
+      + .switch {
+        background-color: $color-success;
+
+        &:before {
+          right: .1em;
+          left: auto;;
+        }
+      }
+    }
+  }
+
+  .switch {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 1.2em;
+    padding: 0;
+    line-height: 1em;
+    border-radius: 1em;
+    background-color: $color-error;
+    transition: background-color 0.3s ease-in;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1em;
+      height: 1em;
+      margin: 0;
+      background: #FFFFFF;
+      position: absolute;
+      top: .1em;
+      left: .1em;
+      border-radius: 1em;
+      transition: all 0.3s ease-in 0s;
+    }
+  }
+}

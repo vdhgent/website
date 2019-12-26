@@ -1,0 +1,13 @@
+<h3>Settings</h3>
+<form>
+    <label class="onoffswitch-row">
+        <div class="onoffswitch">
+            <input type="checkbox"
+                   id="settingWithBackgroundImage"
+                   {% if settings.withBackgroundImage %}checked{% endif %}
+            >
+            <div class="switch"></div>
+        </div>
+        <div class="text">Background image</div>
+    </label>
+</form>

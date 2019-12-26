@@ -1,0 +1,65 @@
+// Move picture and menu to top
+@media screen and (max-width: 640px) {
+  header {
+    font-size: .7em;
+  }
+
+  .container {
+    flex-direction: column;
+
+    .aside-wrapper {
+      margin-right: 0;
+
+      footer {
+        display: none;
+      }
+
+      aside {
+        display: flex;
+
+        .profile {
+          flex-grow: 1;
+
+          img  {
+
+            &::after {
+              contain: none;
+            }
+          }
+        }
+
+        nav {
+          flex-grow: 1;
+          background-color: $color-gray-darkest;
+        }
+      }
+    }
+
+    main + footer {
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  header {
+    font-size: .5em;
+  }
+
+  .profile {
+    display: none;
+  }
+}
+
+// Collapse menu
+
+// 320px
+//480px
+//600px
+//768px
+
+
+//900px
+//1024px
+//1200px

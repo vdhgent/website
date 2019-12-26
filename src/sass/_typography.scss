@@ -1,0 +1,81 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: $color-text;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 1em;
+  border-bottom: 2px solid $color-gray-lighter;
+  padding-bottom: .5em;
+  margin-bottom: 1em;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.2em;
+}
+
+a {
+  //font-style: italic;
+  //letter-spacing: .1em;
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text;
+  }
+}
+
+.status-message {
+  font-weight: bold;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  margin: 1em 0;
+  border-radius: .5em;
+
+  &.success {
+    background-color: $color-success;
+  }
+
+  &.error {
+    background-color: $color-error;
+  }
+}
+
+.message {
+  text-align: center;
+  border: 3px solid $color-gray-lighter;
+  padding: 1em;
+
+  &.contact {
+    border-color: $color-contact;
+  }
+
+  &.warning {
+    border-color: $color-yellow;
+  }
+}

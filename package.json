@@ -1,0 +1,27 @@
+{
+  "name": "vdh",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "index.js",
+  "author": "thomas@vdh.gent",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.23.7"
+  },
+  "scripts": {
+    "sass": "gulp styles",
+    "watch": "gulp watch"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}

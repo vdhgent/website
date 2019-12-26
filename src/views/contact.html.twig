@@ -1,0 +1,33 @@
+<section class="contact" id="contact">
+    <h3>Contact</h3>
+    <p>
+        Do you have questions and/or remarks? Contact me and you'll get an answer as soon as possible.
+    </p>
+    <address>
+        <i class="fas fa-phone"></i> <a href="tel:+32472484530">+32 472 48 45 30</a><br>
+        <i class="fas fa-envelope"></i> <a href="mailto:info@vdh.gent">info@vdh.gent</a><br>
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/thomasvanderhaeghen" target="_blank">linkedin.com/in/thomasvanderhaeghen</a><br>
+        <i class="fab fa-github"></i> <a href="https://github.com/WebDevTmas">github.com/WebDevTmas</a>
+    </address>
+    {% if formError is defined %}
+        <div class="status-message error">
+            <i class="fas fa-times"></i> {{ formError }}
+        </div>
+    {% endif %}
+
+    {% if formSuccess is defined and formSuccess %}
+        <div class="status-message success">
+            <i class="fas fa-check"></i> Message has been sent.
+        </div>
+    {% else %}
+        <form id="contact-form" method="post">
+            <input type="text" placeholder="Your name" name="name" />
+            <input type="email" placeholder="your@email.be" name="email" />
+            <textarea placeholder="Type your message here..." name="message" rows="4"></textarea>
+            <div class="form-actions">
+                <button type="button" onclick="captcha.onSubmitClicked()">Send</button>
+            </div>
+            <div id="captcha"></div>
+        </form>
+    {% endif %}
+</section>
