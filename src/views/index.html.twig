@@ -16,7 +16,7 @@
     <meta name="author" content="Thomas Vanderhaeghen">
 
     <meta name="og:title" property="og:title" content="Thomas Vanderhaeghen, PHP freelancer and consultant">
-    <meta name="twitter:card" content="Thomas Vanderhaeghen, PHP Freelancer">
+    <meta name="twitter:card" content="Thomas Vanderhaeghen, PHP Freelancer and consultant">
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800|Merriweather:400,700,900|Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -29,8 +29,22 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333333">
     <meta name="msapplication-TileColor" content="#333333">
     <meta name="theme-color" content="#333333">
+
+    {% if debug is not defined or not debug %}
+        <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-155235498-1', 'auto');
+
+            ga('require', 'urlChangeTracker');
+
+            ga('send', 'pageview');
+        </script>
+        <script async src="https://www.google-analytics.com/analytics.js"></script>
+        <script async src="/autotrack.js"></script>
+    {% endif %}
 </head>
 <body {% if settings.withBackgroundImage %}class="with-background-image"{% endif %}>
+
     <header>
         <h1>Thomas Vanderhaeghen</h1>
         <h2>PHP FREELANCER AND CONSULTANT</h2>

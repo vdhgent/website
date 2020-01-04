@@ -4850,6 +4850,9 @@ a {
       font-size: .9em;
       margin-top: 1em; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #efefef;
   text-align: center; }

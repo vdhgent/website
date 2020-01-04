@@ -52,7 +52,8 @@ class RequestHandler
      */
     public function handle(): void
     {
-        $page = ltrim( $_SERVER['PATH_INFO'] ?? 'about', '/');
+        $path = parse_url($_SERVER['REQUEST_URI'] ?? 'about')['path'];
+        $page = trim($path, '/');
 
         if (! file_exists(__DIR__ . '/views/' . $page . '.html.twig')) {
             $page = '404';
@@ -76,7 +77,7 @@ class RequestHandler
         header('Strict-Transport-Security: max-age=31536000; includeSubDomains');
         header('X-Content-Type-Options: nosniff');
         header('Referrer-Policy: same-origin');
-        header('Content-Security-Policy: default-src \'self\' \'unsafe-inline\' fonts.googleapis.com www.google.com tmas.me fonts.gstatic.com www.gstatic.com');
+        header('Content-Security-Policy: default-src \'self\' \'unsafe-inline\' fonts.googleapis.com www.google.com tmas.me fonts.gstatic.com www.gstatic.com www.googletagmanager.com www.google-analytics.com');
         header('Feature-Policy: vibrate \'none\'');
         $this->twig->display('index.html.twig', $viewParams);
     }
@@ -87,7 +88,7 @@ class RequestHandler
     private function getHttp2ServerPushHeader(): string
     {
         $pushes = [
-            '</style.css>; rel=preload',
+            '</style.css>; rel=preload; as=style',
             '</images/profile.jpeg>; rel=preload; as=image'
         ];
 
