@@ -1,0 +1,41 @@
+{
+  "subtitle": "Developer, project manager, analyst and DevOps",
+  "about_me": {
+    "title": "About me",
+    "paragraph_1": "My name is Thomas Vanderhaeghen and specialise in PHP development. In my 11 years as a professional developer I also picked up skills in React (typescript), devops and project management.",
+    "paragraph_2": "I believe that alone or together with your team my experience and skill can make a difference in your company.",
+    "paragraph_3": "While developing help is always welcome, either building a good foundation for new applications or improving on already existing applications. Either way I will work hard to set you up for success."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "day": "Day price",
+    "week": "Week price",
+    "advice": "Advice / introduction conversation",
+    "free": "Free",
+    "transport": "Transport cost"
+  },
+  "profile_picture": {
+    "caption": "Profile picture taken on September 2022."
+  },
+  "skills": {
+    "title": "Skills",
+    "php": "Using <strong>PHP</strong> since 2004 (5.0 until 8.1) together with frameworks and libraries like symfony, laravel, codeigniter, doctrine and propel.",
+    "react": "In the last years frontend development started to play a bigger role, starting out with angular2 later moved on to <strong>react</strong>. This website is created with NuXT (vue.js).",
+    "docker": "<strong>Docker</strong> has been my primary setup for local development. Expanded into <strong>kubernetes</strong> for production and test servers.",
+    "aws": "When doing devops my go-to is mostly <strong>AWS&ensp;services</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Simple Search, SES, ElastiCache, IAM, Certificate manager"
+  },
+  "experience": {
+    "title": "Experience",
+    "2011": "Made-to-measure application to improve efficiency within the company. PHP Developer.",
+    "2013": "iController.eu. Application for credit control and management. Where I first came into contact with Agile and project management. PHP Developer.",
+    "2015": "Diligentia uitgeverij. Digital courses and school management. PHP Developer.",
+    "2018": "Optios. Salon management software, online booking, register and marketing. Lead developer.",
+    "2023": "Start as a freelance developer."
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "E-mail"
+  },
+  "footer": "Design inspired by The washington post front page."
+}

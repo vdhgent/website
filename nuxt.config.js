@@ -1,4 +1,7 @@
 export default {
+    modules: [
+        '@nuxtjs/i18n',
+    ],
     buildModules: [
         '@nuxtjs/style-resources'
     ],
@@ -8,15 +11,42 @@ export default {
             '~assets/scss/variables.scss',
         ]
     },
+    i18n: {
+        locales: [
+            { code: 'en', iso: 'en', file: 'en.json', flag: 'gb', name: 'English' },
+            { code: 'nl', iso: 'nl', file: 'nl.json', flag: 'nl', name: 'Nederlands' },
+            // { code: 'fr', iso: 'fr', file: 'fr.json', flag: 'fr', name: 'français' },
+            // { code: 'it', iso: 'it', file: 'it.json', flag: 'it', name: 'italiano' },
+        ],
+        defaultLocale: 'en',
+        langDir: '~/translations/',
+        useCookie: true,
+        vueI18n: {
+            fallbackLocale: 'en',
+            datetimeFormats: {
+                "en": {
+                    "long": {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    }
+                }
+            }
+        }
+    },
     head: {
-        title: 'Thomas Vanderhaeghen - Freelance PHP developer',
+        htmlAttrs: {
+            lang: 'en'
+        },
+        title: 'Thomas Vanderhaeghen - Freelance PHP developer.',
         meta: [
             {charset: 'utf-8'},
             {name: 'viewport', content: 'width=device-width, initial-scale=1'},
             {
                 hid: 'description',
                 name: 'description',
-                content: 'my website description'
+                content: 'Thomas Vanderhaeghen, freelance php and react developer. Currently available from 03/01/2023.'
             },
             {name: "msapplication-TileColor", content: "#ffffff"},
             {name: "theme-color", content: "#ffffff"}

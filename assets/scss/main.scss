@@ -281,3 +281,12 @@ address {
         }
     }
 }
+
+.language-link {
+    margin-right: .2em;
+    border-bottom: none;
+
+    &:hover {
+        border-bottom: none;
+    }
+}

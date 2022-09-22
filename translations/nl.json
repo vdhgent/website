@@ -1,0 +1,41 @@
+{
+  "subtitle": "Developer, project manager, analist en DevOps",
+  "about_me": {
+    "title": "Over mij",
+    "paragraph_1": "Mijn naam is Thomas Vanderhaeghen en specialiseer in PHP-ontwikkeling. In mijn 11 jaar als professionele ontwikkelaar heb ik ook vaardigheden opgedaan in React (typescript), devops en projectmanagement.",
+    "paragraph_2": "Ik geloof dat alleen of samen met uw team mijn ervaring en vaardigheden het verschil kunnen maken in uw bedrijf.",
+    "paragraph_3": "Tijdens het ontwikkelen is hulp altijd welkom, ofwel voor het bouwen van een goede basis voor nieuwe applicaties/team of het verbeteren van reeds bestaande applicaties. Ik zal hoe dan ook hard werken om het bedrijf te helpen opweg naar succes."
+  },
+  "pricing": {
+    "title": "Prijs",
+    "day": "Dag prijs",
+    "week": "Week prijs",
+    "advice": "Advies / introductie gesprek",
+    "free": "Gratis",
+    "transport": "Transport kosten"
+  },
+  "profile_picture": {
+    "caption": "Profile picture taken on September 2022."
+  },
+  "skills": {
+    "title": "Vaardigheden",
+    "php": "Ik gebruik <strong>PHP</strong> sinds 2004 (5.0 tot 8.1) tesamen met frameworks en libraries als symfony, laravel, incognito, doctrine en propel.",
+    "react": "In de laatste jaren is frontend steeds belangrijker geworden, beginnende bij angular2 en later naar <strong>react</strong>. Deze website is gemaakt in NuXT (vue.js).",
+    "docker": "<strong>Docker</strong> is mijn primaire setup voor lokaal te ontwikkelen. Uitgebreid naar <strong>kubernetes</strong> voor productie omgevingen en test servers.",
+    "aws": "Wanneer DevOps bij mij takenpakket is gekomen was <strong>AWS</strong> mijn eerste keuze. Cloudformation, Cloudfront, Beanstalk, EC2, S3, SQS, SES, ElastiCache, IAM, Certificate manager, ..."
+  },
+  "experience": {
+    "title": "Ervaring",
+    "2011": "Aware. Op maat gemaakte applicaties voor het verbeteren van efficientie binnen het bedrijf. PHP Developer.",
+    "2013": "iController.eu. Applicatie voor krediet controle. Hier kwam ik voor het eerst in aanraking met Agile en project management. PHP Developer.",
+    "2015": "Diligentia uitgeverij. Digitale cursussen en school beheer. PHP Developer.",
+    "2018": "Optios. Salon beheer software, online boeking, kassa en marketing. Lead developer.",
+    "2023": "Start als freelance developer."
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Telefoon",
+    "email": "E-mail"
+  },
+  "footer": "Ontwerp geïnspireerd door `The washington post` voorpagina."
+}
