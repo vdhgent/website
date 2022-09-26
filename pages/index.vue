@@ -55,7 +55,7 @@ export default {
           </div>
         </div>
         <div class="middle-content">
-          <img src="~assets/images/profile.jpeg" :alt="$t('profile_picture.caption')"/>
+          <img src="~assets/images/profile2.jpeg" :alt="$t('profile_picture.caption')"/>
           <figcaption>{{ $t('profile_picture.caption') }}</figcaption>
         </div>
         <div class="right-content">

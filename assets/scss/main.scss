@@ -177,7 +177,7 @@ article {
 
     .right-content {
         flex-basis: 0;
-        flex-grow: 4;
+        flex-grow: 3;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -290,3 +290,5 @@ address {
         border-bottom: none;
     }
 }
+
+@import "mobile";

@@ -15,7 +15,7 @@ export default {
         locales: [
             { code: 'en', iso: 'en', file: 'en.json', flag: 'gb', name: 'English' },
             { code: 'nl', iso: 'nl', file: 'nl.json', flag: 'nl', name: 'Nederlands' },
-            // { code: 'fr', iso: 'fr', file: 'fr.json', flag: 'fr', name: 'français' },
+            { code: 'fr', iso: 'fr', file: 'fr.json', flag: 'fr', name: 'français' },
             // { code: 'it', iso: 'it', file: 'it.json', flag: 'it', name: 'italiano' },
         ],
         defaultLocale: 'en',
@@ -25,6 +25,30 @@ export default {
             fallbackLocale: 'en',
             datetimeFormats: {
                 "en": {
+                    "long": {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    }
+                },
+                "nl": {
+                    "long": {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    }
+                },
+                "fr": {
+                    "long": {
+                        weekday: 'long',
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    }
+                },
+                "it": {
                     "long": {
                         weekday: 'long',
                         year: 'numeric',

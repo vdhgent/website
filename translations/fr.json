@@ -1,41 +1,41 @@
 {
-  "subtitle": "Developer, project manager, analyst and DevOps",
+  "subtitle": "Développeur, chef de projet, analyste et DevOps",
   "about_me": {
-    "title": "About me",
-    "paragraph_1": "My name is Thomas Vanderhaeghen and specialise in PHP development. In my 11 years as a professional developer I also picked up skills in React (typescript), devops and project management.",
-    "paragraph_2": "I believe that alone or together with your team my experience and skill can make a difference in your company.",
-    "paragraph_3": "While developing help is always welcome, either building a good foundation for new applications or improving on already existing applications. Either way I will work hard to set you up for success."
+    "title": "À propos de moi",
+    "paragraph_1": "Je m'appelle Thomas Vanderhaeghen et je suis spécialisé dans le développement PHP. Au cours de mes 11 années en tant que développeur professionnel, j'ai également acquis des compétences en React (typescript), devops et en gestion de projet.",
+    "paragraph_2": "Je crois que seul ou avec votre équipe, mon expérience et mes compétences peuvent faire la différence dans votre entreprise.",
+    "paragraph_3": "Bien que l'aide au développement soit toujours la bienvenue, qu'il s'agisse de créer une bonne base pour de nouvelles applications ou d'améliorer des applications déjà existantes. Quoi qu'il en soit, je travaillerai dur pour vous préparer au succès."
   },
   "pricing": {
-    "title": "Pricing",
-    "day": "Day price",
-    "week": "Week price",
-    "advice": "Advice / introduction conversation",
-    "free": "Free",
-    "transport": "Transport cost"
+    "title": "Tarification",
+    "day": "Tarification journalière",
+    "week": "Prix à la semaine",
+    "advice": "Conversation de conseil/d'introduction",
+    "free": "Gratuit",
+    "transport": "Coût de transport"
   },
   "profile_picture": {
-    "caption": "Profile picture taken on September 2022."
+    "caption": "Photo de profil prise en septembre 2022."
   },
   "skills": {
-    "title": "Skills",
-    "php": "Using <strong>PHP</strong> since 2004 (5.0 until 8.1) together with frameworks and libraries like symfony, laravel, codeigniter, doctrine and propel.",
-    "react": "In the last years frontend development started to play a bigger role, starting out with angular2 later moved on to <strong>react</strong>. This website is created with NuXT (vue.js).",
-    "docker": "<strong>Docker</strong> has been my primary setup for local development. Expanded into <strong>kubernetes</strong> for production and test servers.",
-    "aws": "When doing devops my go-to is mostly <strong>AWS&ensp;services</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Simple Search, SES, ElastiCache, IAM, Certificate manager"
+    "title": "Compétences",
+    "php": "Utilisation de <strong>PHP</strong> depuis 2004 (5.0 à 8.1) avec des frameworks et des bibliothèques comme symfony, laravel, codeigniter, doctrine et propel.",
+    "react": "Au cours des dernières années, le développement du frontend a commencé à jouer un rôle plus important, en commençant par angular2, puis en passant à <strong>react</strong>. Ce site web est créé avec NuXT (vue.js).",
+    "docker": "<strong>Docker</strong> a été ma configuration principale pour le développement local. Développé dans <strong>kubernetes</strong> pour les serveurs de production et de test.",
+    "aws": "Lorsque je fais des devops, je me tourne principalement vers les <strong>services AWS</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Recherche simple, SES, ElastiCache, IAM, Gestionnaire de certificats."
   },
   "experience": {
-    "title": "Experience",
-    "2011": "Made-to-measure application to improve efficiency within the company. PHP Developer.",
-    "2013": "iController.eu. Application for credit control and management. Where I first came into contact with Agile and project management. PHP Developer.",
-    "2015": "Diligentia uitgeverij. Digital courses and school management. PHP Developer.",
-    "2018": "Optios. Salon management software, online booking, register and marketing. Lead developer.",
-    "2023": "Start as a freelance developer."
+    "title": "Vivre",
+    "2011": "Aware. Made-to-measure application to improve efficiency within the company. PHP Developer.",
+    "2013": "iController.eu. Application pour le contrôle et la gestion du crédit. Où je suis entré en contact avec Agile et la gestion de projet. Développeur PHP.",
+    "2015": "Diligentia uitgeverij. Cours numériques et gestion scolaire. Développeur PHP.",
+    "2018": "Optios. Logiciel de gestion de salon, réservation en ligne, registre et marketing. Développeur principal.",
+    "2023": "Commencez en tant que développeur indépendant."
   },
   "contact": {
     "title": "Contact",
-    "phone": "Phone",
-    "email": "E-mail"
+    "phone": "Téléphoner",
+    "email": "Email"
   },
-  "footer": "Design inspired by The washington post front page."
+  "footer": "Design inspiré de la première page du Washington Post."
 }
