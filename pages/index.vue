@@ -27,7 +27,7 @@ export default {
           Vol, I
         </div>
         <div class="sub-header-date">{{ $d(new Date(), 'long') }}</div>
-        <div>vanaf &euro;390/dag</div>
+        <div>{{ $t('availability') }}</div>
       </div>
     </div>
     <main>
@@ -42,16 +42,6 @@ export default {
               <p>{{ $t('about_me.paragraph_2') }}</p>
               <p>{{ $t('about_me.paragraph_3') }}</p>
             </article>
-          </div>
-
-          <div>
-            <h4 style="margin-top: 1em">{{ $t('pricing.title') }}</h4>
-            <dl class="pricing">
-              <dt>{{ $t('pricing.day') }}</dt><dd>€&nbsp;&nbsp;430&nbsp;&nbsp;</dd>
-              <dt>{{ $t('pricing.week') }}</dt><dd>€&nbsp;1950&nbsp;&nbsp;</dd>
-              <dt>{{ $t('pricing.transport') }}</dt><dd>€&nbsp;0,4/km</dd>
-              <dt>{{ $t('pricing.advice') }}</dt><dd>{{ $t('pricing.free') }}&nbsp;&nbsp;</dd>
-            </dl>
           </div>
         </div>
         <div class="middle-content">
