@@ -1,7 +1,9 @@
 <script>
+import RatingRow from "@/components/RatingRow";
 export default {
+  components: {RatingRow},
   computed: {
-    availableLocales () {
+    availableLocales() {
       return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   }
@@ -9,111 +11,107 @@ export default {
 </script>
 
 <template>
-  <div>
-    <h1>Thomas Vanderhaeghen</h1>
-    <div class="sub-header">
-      <div class="sub-header-inner">
-        <div>
-          <nuxt-link
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              :to="switchLocalePath(locale.code)"
-              class="language-link">
-            <img
-                :src="'https://flagcdn.com/' + locale.flag + '.svg'"
-                height="14"
-                :alt="locale.name">
-          </nuxt-link>
-          Vol, I
-        </div>
-        <div class="sub-header-date">{{ $d(new Date(), 'long') }}</div>
-        <div>{{ $t('availability') }}</div>
+  <div class="wrapper">
+
+    <header>
+      <div class="language-menu">
+        <nuxt-link
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)"
+            class="language-link no-styling">
+          <img
+              :src="'https://flagcdn.com/' + locale.flag + '.svg'"
+              height="14"
+              :alt="locale.name">
+        </nuxt-link>
       </div>
-    </div>
+      <h1>Thomas<br/>Vanderhaeghen</h1>
+      <div class="bar"/>
+    </header>
+
     <main>
-      <h2>PHP Developer</h2>
-      <h3>{{ $t('subtitle') }}</h3>
-      <div class="content">
-        <div class="left-content">
-          <div>
-            <h4>{{ $t('about_me.title') }}</h4>
-            <article>
-              <p>{{ $t('about_me.paragraph_1') }}</p>
-              <p>{{ $t('about_me.paragraph_2') }}</p>
-              <p>{{ $t('about_me.paragraph_3') }}</p>
-            </article>
-          </div>
-        </div>
-        <div class="middle-content">
-          <img src="~assets/images/profile2.jpeg" :alt="$t('profile_picture.caption')"/>
-          <figcaption>{{ $t('profile_picture.caption') }}</figcaption>
-        </div>
-        <div class="right-content">
-          <h4>{{ $t('skills.title') }}</h4>
-
-          <article>
-            <img src="~assets/images/php.svg" width="130" class="float-left" alt="PHP Logo"/>
-            <p v-html="$t('skills.php')" />
-          </article>
-
-          <article>
-            <img src="~assets/images/react.png" width="90" class="float-right" alt="React logo"/>
-            <p v-html="$t('skills.react')" />
-          </article>
-
-          <article>
-            <img src="~assets/images/docker.webp" width="85" class="float-left" alt="Docker logo"/>
-            <!--            <img src="~assets/images/kubernetes.png" width="100" class="float-right"/>-->
-            <p v-html="$t('skills.docker')" />
-          </article>
-
-          <article>
-            <img src="~assets/images/aws.png" width="90" class="float-right" alt="AWS Logo"/>
-            <p v-html="$t('skills.aws')" />
-          </article>
-        </div>
-      </div>
-    </main>
-
-    <article class="bottom-bar">
-      <h4>{{ $t('experience.title') }}</h4>
-      <div class="timeline">
-        <div class="timeline-year">
-          <h5>2011</h5>
-          <p>🎓 {{ $t('experience.2011') }}</p>
-        </div>
-
-        <div class="timeline-year">
-          <h5>2013</h5>
-          <p>📈 {{ $t('experience.2013') }}</p>
-        </div>
-        <div class="timeline-year">
-          <h5>2015</h5>
-          <p>📚 {{ $t('experience.2015') }}</p>
-        </div>
-        <div class="timeline-year">
-          <h5>2018</h5>
-          <p>🚀 {{ $t('experience.2018') }}</p>
-        </div>
-        <div class="timeline-year">
-          <h5>2023</h5>
-          <p>🎉 {{ $t('experience.2023') }}</p>
-        </div>
-      </div>
-    </article>
-
-    <address>
-      <div class="address-inner">
+      <h2>Freelance developer and coach</h2>
+      <h3>PHP, React and DevOps</h3>
+      <h4>{{ $t('about_me.title') }}</h4>
+      <p>{{ $t('about_me.paragraph_1') }}</p>
+      <p>{{ $t('about_me.paragraph_2') }}</p>
+      <p>{{ $t('about_me.paragraph_3') }}</p>
+      <address>
         <h4>{{ $t('contact.title') }}</h4>
-        <span>{{ $t('contact.email') }} <a href="mailto:info@vdh.gent">info@vdh.gent</a></span>
-        <span>{{ $t('contact.phone') }} <a href="tel:+32472484530">+32 472 48 45 30</a></span>
-        <span style="position: relative; margin-right: 20px">
-          <a href="https://www.linkedin.com/in/thomasvanderhaeghen" target="_blank">
-            Linked<img src="~/assets/images/linkedin.svg" height="20" style="position: absolute; bottom: .05em" alt="LinkedIn logo" />
-          </a>
-        </span>
-      </div>
-    </address>
-    <footer>{{ $t('footer') }}</footer>
+        <p>Parklaan 60, 9000 Gent</p>
+        <p><a href="tel:+32472484530">+32 472 48 45 30</a></p>
+        <p><a href="mailto:info@vdh.gent">info@vdh.gent</a></p>
+      </address>
+      <h4>{{ $t('skills.title') }}</h4>
+      <ul>
+        <li>
+          <span>PHP / Symfony</span>
+          <RatingRow :rating="5" />
+        </li>
+        <li>
+          <span>React / Typescript / Javascript</span>
+          <RatingRow :rating="5" />
+        </li>
+        <li><span>SQL</span>
+          <RatingRow :rating="5" />
+        </li>
+        <li>
+          <span>Redis</span>
+          <RatingRow :rating="4" />
+        </li>
+        <li>
+          <span>Elastic</span>
+          <RatingRow :rating="3" />
+        </li>
+        <li>
+          <span>AWS DevOps</span>
+          <RatingRow :rating="3" />
+        </li>
+        <li>
+          <span>Kubernetes / Docker</span>
+          <RatingRow :rating="4" />
+        </li>
+        <li>
+          <span>HTML & CSS</span>
+          <RatingRow :rating="5" />
+        </li>
+        <li>
+          <span>{{ $t('skills.agile') }}</span>
+          <RatingRow :rating="4" />
+        </li>
+        <li>
+          <span>{{ $t('skills.leadership') }}</span>
+          <RatingRow :rating="4" />
+        </li>
+        <li>
+          <span>{{ $t('skills.customer_relations') }}</span>
+          <RatingRow :rating="4" />
+        </li>
+      </ul>
+      <h4>{{ $t('experience.title') }}</h4>
+      <dl>
+        <dt><a href="https://www.optios.net" class="no-styling"><img src="~/assets/images/optios 2.png" width="200" alt="Optios"></a></dt>
+        <dd>{{ $t('experience.2018') }}</dd>
+        <dt><img src="~/assets/images/diligentia 2.png" height="50" alt="Diligentia uitgeverij"></dt>
+        <dd>{{ $t('experience.2015') }}</dd>
+        <dt><img src="~/assets/images/icontroller 2.png" width="200" alt="iController"></dt>
+        <dd>{{ $t('experience.2013') }}</dd>
+        <dt><img src="~/assets/images/aware 2.png" width="200" alt="aware"></dt>
+        <dd>{{ $t('experience.2011') }}</dd>
+      </dl>
+      <h4>{{ $t('education.title') }}</h4>
+      <h5>KaHo Sint-Lieven<br /><small>Sep 2007 — Jun 2011</small></h5>
+      <p>{{ $t('education.kaho') }}T</p>
+      <h5>Visitatie Mariakerke<br /><small>Sep 2004 — Jun 2006</small></h5>
+      <p>{{ $t('education.visitatie') }}</p>
+      <h4>{{ $t('languages.title') }}</h4>
+      <ul>
+        <li><span>Nederlands</span><RatingRow :rating="5" /></li>
+        <li><span>English</span><RatingRow :rating="4" /></li>
+        <li><span>français</span><RatingRow :rating="1" /></li>
+        <li><span>Italiano</span><RatingRow :rating="1" /></li>
+      </ul>
+    </main>
   </div>
 </template>

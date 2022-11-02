@@ -23,7 +23,10 @@
     "php": "Utilisation de <strong>PHP</strong> depuis 2004 (5.0 à 8.1) avec des frameworks et des bibliothèques comme symfony, laravel, codeigniter, doctrine et propel.",
     "react": "Au cours des dernières années, le développement du frontend a commencé à jouer un rôle plus important, en commençant par angular2, puis en passant à <strong>react</strong>. Ce site web est créé avec NuXT (vue.js).",
     "docker": "<strong>Docker</strong> a été ma configuration principale pour le développement local. Développé dans <strong>kubernetes</strong> pour les serveurs de production et de test.",
-    "aws": "Lorsque je fais des devops, je me tourne principalement vers les <strong>services AWS</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Recherche simple, SES, ElastiCache, IAM, Gestionnaire de certificats."
+    "aws": "Lorsque je fais des devops, je me tourne principalement vers les <strong>services AWS</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Recherche simple, SES, ElastiCache, IAM, Gestionnaire de certificats.",
+    "agile": "Agile project management",
+    "leadership": "Leadership and teamwork",
+    "customer_relations": "Customer relations"
   },
   "experience": {
     "title": "Vivre",
@@ -32,6 +35,14 @@
     "2015": "Diligentia uitgeverij. Cours numériques et gestion scolaire. Développeur PHP.",
     "2018": "Optios. Logiciel de gestion de salon, réservation en ligne, registre et marketing. Développeur principal.",
     "2023": "Commencez en tant que développeur indépendant."
+  },
+  "education": {
+    "title": "Education",
+    "kaho": "Professional bachelor ICT",
+    "visitatie": "ICT Management"
+  },
+  "languages": {
+    "title": "Langues"
   },
   "contact": {
     "title": "Contact",

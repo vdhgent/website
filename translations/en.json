@@ -23,20 +23,31 @@
     "php": "Using <strong>PHP</strong> since 2004 (5.0 until 8.1) together with frameworks and libraries like symfony, laravel, codeigniter, doctrine and propel.",
     "react": "In the last years frontend development started to play a bigger role, starting out with angular2 later moved on to <strong>react</strong>. This website is created with NuXT (vue.js).",
     "docker": "<strong>Docker</strong> has been my primary setup for local development. Expanded into <strong>kubernetes</strong> for production and test servers.",
-    "aws": "When doing devops my go-to is mostly <strong>AWS&ensp;services</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Simple Search, SES, ElastiCache, IAM, Certificate manager."
+    "aws": "When doing devops my go-to is mostly <strong>AWS&ensp;services</strong>. Cloudformation, Cloudfront, Beanstalk, EC2, S3, Simple Search, SES, ElastiCache, IAM, Certificate manager.",
+    "agile": "Agile project management",
+    "leadership": "Leadership and teamwork",
+    "customer_relations": "Customer relations"
   },
   "experience": {
-    "title": "Experience",
+    "title": "References",
     "2011": "Made-to-measure application to improve efficiency within the company. PHP Developer.",
     "2013": "iController.eu. Application for credit control and management. Where I first came into contact with Agile and project management. PHP Developer.",
     "2015": "Diligentia uitgeverij. Digital courses and school management. PHP Developer.",
     "2018": "Optios. Salon management software, online booking, register and marketing. Lead developer.",
     "2023": "Start as a freelance developer."
   },
+  "education": {
+    "title": "Education",
+    "kaho": "Professional bachelor ICT",
+    "visitatie": "ICT Management"
+  },
   "contact": {
     "title": "Contact",
     "phone": "Phone",
     "email": "E-mail"
+  },
+  "languages": {
+    "title": "Languages"
   },
   "footer": "Design inspired by The washington post front page."
 }

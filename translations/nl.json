@@ -23,15 +23,26 @@
     "php": "Ik gebruik <strong>PHP</strong> sinds 2004 (5.0 tot 8.1) tesamen met frameworks en libraries als symfony, laravel, incognito, doctrine en propel.",
     "react": "In de laatste jaren is frontend steeds belangrijker geworden, beginnende bij angular2 en later naar <strong>react</strong>. Deze website is gemaakt in NuXT (vue.js).",
     "docker": "<strong>Docker</strong> is mijn primaire setup voor lokaal te ontwikkelen. Uitgebreid naar <strong>kubernetes</strong> voor productie omgevingen en test servers.",
-    "aws": "Wanneer DevOps bij mij takenpakket is gekomen was <strong>AWS</strong> mijn eerste keuze. Cloudformation, Cloudfront, Beanstalk, EC2, S3, SQS, SES, ElastiCache, IAM, Certificate manager, ..."
+    "aws": "Wanneer DevOps bij mij takenpakket is gekomen was <strong>AWS</strong> mijn eerste keuze. Cloudformation, Cloudfront, Beanstalk, EC2, S3, SQS, SES, ElastiCache, IAM, Certificate manager, ...",
+    "agile": "Agile project beheer",
+    "leadership": "Leadership and teamwork",
+    "customer_relations": "Klanten relaties"
   },
   "experience": {
-    "title": "Ervaring",
+    "title": "Referenties",
     "2011": "Aware. Op maat gemaakte applicaties voor het verbeteren van efficientie binnen het bedrijf. PHP Developer.",
     "2013": "iController.eu. Applicatie voor krediet controle. Hier kwam ik voor het eerst in aanraking met Agile en project management. PHP Developer.",
     "2015": "Diligentia uitgeverij. Digitale cursussen en school beheer. PHP Developer.",
     "2018": "Optios. Salon beheer software, online boeking, kassa en marketing. Lead developer.",
     "2023": "Start als freelance developer."
+  },
+  "education": {
+    "title": "Opleiding",
+    "kaho": "Professionele bachelor ICT",
+    "visitatie": "Informatica beheer"
+  },
+  "languages": {
+    "title": "Talen"
   },
   "contact": {
     "title": "Contact",

@@ -3,7 +3,8 @@ export default {
         '@nuxtjs/i18n',
     ],
     buildModules: [
-        '@nuxtjs/style-resources'
+        '@nuxtjs/style-resources',
+        '@nuxtjs/google-fonts'
     ],
     css: ['~/assets/scss/main'],
     styleResources: {
@@ -81,5 +82,12 @@ export default {
             {rel: 'manifest', href: '/site.webmanifest'},
             {rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#ffffff'},
         ]
+    },
+    googleFonts: {
+        preload: true,
+        families: {
+            Bevan: true,
+            Oxygen: true
+        }
     }
 }
