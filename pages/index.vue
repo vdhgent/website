@@ -37,6 +37,10 @@ export default {
       <p>{{ $t('about_me.paragraph_1') }}</p>
       <p>{{ $t('about_me.paragraph_2') }}</p>
       <p>{{ $t('about_me.paragraph_3') }}</p>
+      <p>
+        <img src="~/assets/images/download.svg" height="14" :alt="$t('download_csv')">
+        <a href="/cv.pdf">{{ $t('download_cv') }}</a>
+      </p>
       <address>
         <h4>{{ $t('contact.title') }}</h4>
         <p>Parklaan 60, 9000 Gent</p>
@@ -112,6 +116,10 @@ export default {
         <li><span>français</span><RatingRow :rating="1" /></li>
         <li><span>Italiano</span><RatingRow :rating="1" /></li>
       </ul>
+      <p>
+        <img src="~/assets/images/download.svg" height="14" :alt="$t('download_csv')">
+        <a href="/cv.pdf">{{ $t('download_cv') }}</a>
+      </p>
     </main>
   </div>
 </template>

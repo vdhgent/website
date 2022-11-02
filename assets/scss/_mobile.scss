@@ -11,6 +11,10 @@
 
         .bar {
             width: 100%;
+
+            :after {
+                content: none;
+            }
         }
     }
 
@@ -19,7 +23,15 @@
     }
 
     body {
-        font-size: 130%;
+        font-size: 150%;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2, h3 {
+        font-size: 1.1em;
     }
 
     dl {

@@ -74,7 +74,15 @@ export default {
                 content: 'Thomas Vanderhaeghen, freelance php and react developer. Currently available from 03/01/2023.'
             },
             {name: "msapplication-TileColor", content: "#ffffff"},
-            {name: "theme-color", content: "#ffffff"}
+            {name: "theme-color", content: "#ffffff"},
+            {name: "og:title", content: "Thomas Vanderhaeghen - Freelance PHP developer."},
+            {name: "og:description", content: "Thomas Vanderhaeghen, freelance php and react developer. Currently available from 03/01/2023."},
+            {name: "og:image", content: "https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
+            {name: "og:url", content: "https://vdh.gent"},
+            {name: "twitter:title", content: "Thomas Vanderhaeghen - Freelance PHP developer."},
+            {name: "twitter:description", content: "Thomas Vanderhaeghen, freelance php and react developer. Currently available from 03/01/2023."},
+            {name: "twitter:url", content: "https://vdh.gent"},
+            {name: "twitter:card", content: "summary"},
         ],
         link: [
             {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'},
