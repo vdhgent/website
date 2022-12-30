@@ -1,8 +1,25 @@
 @import "reset";
 
+@font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('~assets/fonts/Oxygen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('~assets/fonts/Oxygen-Light.ttf') format('truetype');
+}
+
+
 .wrapper {
     max-width: 45em;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 2em auto;
 }
 
 header {
@@ -66,7 +83,7 @@ h5 {
     }
 }
 
-p {
+p, li, dl {
     font-family: Oxygen, sans-serif;
 }
 
@@ -133,7 +150,7 @@ a {
         width: 100%;
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: -3px;
         transition: height .5s;
     }
 
